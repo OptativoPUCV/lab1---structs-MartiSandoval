@@ -249,3 +249,9 @@ exercises.c:46:7: error: unused variable ‘cant’ [-Werror=unused-variable]
 cc1: all warnings being treated as errors
 Compilation failed
 6f1f97a
+Thu 14 Mar 2024 09:19:41 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  0|5
+total_score: 20/70
+0146537
