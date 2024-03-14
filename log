@@ -211,3 +211,8 @@ exercises.c:57:10: error: ‘nuevo_arr’ may be used uninitialized in this func
 cc1: all warnings being treated as errors
 Compilation failed
 76f3827
+Thu 14 Mar 2024 09:12:07 PM UTC: 
+ exercises.c | 6 +++---
+ 1 file changed, 3 insertions(+), 3 deletions(-)
+ tests:  0|0
+7512259
