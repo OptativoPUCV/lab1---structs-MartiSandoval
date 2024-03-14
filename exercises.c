@@ -28,10 +28,12 @@ void reverseArray(int arr[], int size) {
   int last = size - 1;
   int temp;
   for (int i = 0; i < size; i++) {
+    if (last == i) break;
     temp = arr[i];
     arr[i] = arr[last];
     arr[last] = temp;
-    last--;     
+    last--;
+    
   }
 }
 
