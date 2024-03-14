@@ -29,3 +29,14 @@ Thu 14 Mar 2024 08:30:16 PM UTC:
  tests:  0|6
 total_score: 10/70
 54bf301
+Thu 14 Mar 2024 08:33:44 PM UTC: 
+ exercises.c | 10 ++++++----
+ 1 file changed, 6 insertions(+), 4 deletions(-)
+In file included from test.c:1:
+exercises.c: In function ‘reverseArray’:
+exercises.c:33:12: error: ‘temp’ may be used uninitialized [-Werror=maybe-uninitialized]
+   33 |     arr[i] = temp;
+      |     ~~~~~~~^~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+776d139
