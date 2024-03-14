@@ -200,3 +200,14 @@ Thu 14 Mar 2024 09:01:13 PM UTC:
  tests:  0|5
 total_score: 20/70
 64eb7ea
+Thu 14 Mar 2024 09:03:01 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:1:
+exercises.c: In function ‘filterEvenNumbers’:
+exercises.c:57:10: error: ‘nuevo_arr’ may be used uninitialized in this function [-Werror=maybe-uninitialized]
+   57 |   return nuevo_arr;
+      |          ^~~~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+76f3827
