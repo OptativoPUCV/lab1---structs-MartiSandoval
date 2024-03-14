@@ -27,16 +27,14 @@ void reverseArray(int arr[], int size) {
   
   int last = size - 1;
   int temp;
-  int i  = 0;
-  while (i < last)
-  {
+  for (int i = 0; i < size; i++) {
+    if (i >= last) break;
     temp = arr[i];
     arr[i] = arr[last];
     arr[last] = temp;
-    i++;
     last--;
+    
   }
-  
 }
 
 /*
