@@ -117,3 +117,14 @@ exercises.c:47:7: note: while referencing ‘nuevo_arr.109’
 cc1: all warnings being treated as errors
 Compilation failed
 408820f
+Thu 14 Mar 2024 08:45:54 PM UTC: 
+ exercises.c | 3 ++-
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+In file included from test.c:1:
+exercises.c: In function ‘filterEvenNumbers’:
+exercises.c:57:10: error: ‘nuevo_arr’ may be used uninitialized in this function [-Werror=maybe-uninitialized]
+   57 |   return nuevo_arr;
+      |          ^~~~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+a715bad
