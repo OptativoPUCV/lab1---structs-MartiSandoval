@@ -72,3 +72,17 @@ exercises.c:56:10: error: function returns address of local variable [-Werror=re
 cc1: all warnings being treated as errors
 Compilation failed
 8e9ef85
+Thu 14 Mar 2024 08:43:00 PM UTC: 
+ exercises.c | 7 ++++---
+ 1 file changed, 4 insertions(+), 3 deletions(-)
+In file included from test.c:1:
+exercises.c: In function ‘filterEvenNumbers’:
+exercises.c:47:3: error: variable-sized object may not be initialized
+   47 |   int nuevo_arr[*newSize] = NULL;
+      |   ^~~
+exercises.c:57:19: error: returning ‘int’ from a function with return type ‘int *’ makes pointer from integer without a cast [-Werror=int-conversion]
+   57 |   return nuevo_arr[*newSize];
+      |          ~~~~~~~~~^~~~~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+b0c13d7
