@@ -134,3 +134,25 @@ Thu 14 Mar 2024 08:46:42 PM UTC:
  tests:  0|5
 total_score: 20/70
 2bf19a5
+Thu 14 Mar 2024 08:55:17 PM UTC: 
+ exercises.c | 36 ++++++++++++++++++++++++++++++++++--
+ 1 file changed, 34 insertions(+), 2 deletions(-)
+In file included from test.c:1:
+exercises.c: In function ‘mergeSortedArrays’:
+exercises.c:75:18: error: ‘size’ undeclared (first use in this function); did you mean ‘size2’?
+   75 |         if (i == size - 1) {
+      |                  ^~~~
+      |                  size2
+exercises.c:75:18: note: each undeclared identifier is reported only once for each function it appears in
+exercises.c:97:10: error: ‘return’ with a value, in function returning void [-Werror=return-type]
+   97 |   return result;
+      |          ^~~~~~
+exercises.c:66:6: note: declared here
+   66 | void mergeSortedArrays(int arr1[], int size1, int arr2[], int size2, int result[]) {
+      |      ^~~~~~~~~~~~~~~~~
+exercises.c:67:7: error: unused variable ‘talla’ [-Werror=unused-variable]
+   67 |   int talla = size1 + size2;
+      |       ^~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+3357656
