@@ -40,3 +40,9 @@ exercises.c:33:12: error: ‘temp’ may be used uninitialized [-Werror=maybe-un
 cc1: all warnings being treated as errors
 Compilation failed
 776d139
+Thu 14 Mar 2024 08:34:06 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  0|5
+total_score: 20/70
+07d5d6f
