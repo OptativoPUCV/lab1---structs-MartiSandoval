@@ -82,6 +82,14 @@ void mergeSortedArrays(int arr1[], int size1, int arr2[], int size2, int result[
         result[indice] = arr1[i];
         i++;
       }
+      else if (arr1[i] == arr2[k]) {
+        result[indice] = arr1[i];
+        i++;
+        indice++;
+        result[indice] = arr2[k];
+        k++;
+        indice++;
+      }
       else {
         result[indice] = arr2[k];
         k++;
