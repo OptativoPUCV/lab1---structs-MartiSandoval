@@ -157,7 +157,8 @@ typedef struct {
 } Libro;
 
 void inicializarLibro(Libro *libro, const char *titulo, const char *nombreAutor, int anioNacimiento, int anioPublicacion) {
-
+  printf("%c\n\n", Libro.titulo);
+  printf("%c\n", Libro.autor.nombre);
   
 }
 
@@ -184,6 +185,7 @@ Nodo *crearListaEnlazada(int arr[], int size) {
     temp = (Nodo *)malloc(sizeof(Nodo));
     temp->numero = arr[i];
     if (head == NULL) head = temp;
+      
     else actual->siguiente = temp;
     
     actual = temp;

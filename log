@@ -397,3 +397,16 @@ Sat 16 Mar 2024 08:37:53 PM UTC:
  tests:  0|1
 total_score: 60/70
 13e47bd
+Sat 16 Mar 2024 08:43:23 PM UTC: 
+ exercises.c | 3 ++-
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+In file included from test.c:1:
+exercises.c: In function ‘inicializarLibro’:
+exercises.c:160:20: error: expected expression before ‘Libro’
+  160 |   printf("%c\n\n", Libro.titulo);
+      |                    ^~~~~
+exercises.c:161:18: error: expected expression before ‘Libro’
+  161 |   printf("%c\n", Libro.autor.nombre);
+      |                  ^~~~~
+Compilation failed
+56be8e9
