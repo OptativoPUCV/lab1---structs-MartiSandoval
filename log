@@ -296,3 +296,20 @@ Sat 16 Mar 2024 05:58:38 PM UTC:
  tests:  0|3
 total_score: 40/70
 84c3d79
+Sat 16 Mar 2024 07:07:02 PM UTC: 
+ exercises.c | 21 ++++++++++++++++++++-
+ 1 file changed, 20 insertions(+), 1 deletion(-)
+In file included from test.c:1:
+exercises.c: In function ‘checkSorted’:
+exercises.c:118:7: error: variable ‘ninguno’ set but not used [-Werror=unused-but-set-variable]
+  118 |   int ninguno = 1;
+      |       ^~~~~~~
+exercises.c:117:7: error: variable ‘descendente’ set but not used [-Werror=unused-but-set-variable]
+  117 |   int descendente = 1;
+      |       ^~~~~~~~~~~
+exercises.c:116:7: error: variable ‘ascendente’ set but not used [-Werror=unused-but-set-variable]
+  116 |   int ascendente = 1;
+      |       ^~~~~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+5353dd6
