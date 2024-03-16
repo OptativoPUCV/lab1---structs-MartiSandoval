@@ -325,3 +325,19 @@ Sat 16 Mar 2024 07:12:36 PM UTC:
  tests:  0|3
 total_score: 40/70
 d4181f0
+Sat 16 Mar 2024 07:17:13 PM UTC: 
+ exercises.c | 27 +++++++++++++++++++--------
+ 1 file changed, 19 insertions(+), 8 deletions(-)
+In file included from test.c:1:
+exercises.c: In function ‘checkSorted’:
+exercises.c:129:12: error: ‘des’ undeclared (first use in this function); did you mean ‘desc’?
+  129 |   else if (des) {
+      |            ^~~
+      |            desc
+exercises.c:129:12: note: each undeclared identifier is reported only once for each function it appears in
+exercises.c:116:7: error: variable ‘desc’ set but not used [-Werror=unused-but-set-variable]
+  116 |   int desc = 1;
+      |       ^~~~
+cc1: all warnings being treated as errors
+Compilation failed
+de36bca
