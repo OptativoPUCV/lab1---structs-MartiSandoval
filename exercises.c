@@ -184,7 +184,7 @@ Nodo *crearListaEnlazada(int arr[], int size) {
     temp = (Nodo *)malloc(sizeof(int));
     temp->numero = arr[i];
     if (head == NULL) temp->numero = head->numero;
-    actual->siguiente = temp;
+    actual->siguiente = temp->numero;
     temp = NULL;
   }
   

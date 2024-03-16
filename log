@@ -352,3 +352,26 @@ Sat 16 Mar 2024 08:08:06 PM UTC:
  1 file changed, 18 insertions(+), 3 deletions(-)
  tests:  0|0
 438065b
+Sat 16 Mar 2024 08:08:33 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:1:
+exercises.c: In function ‘crearListaEnlazada’:
+exercises.c:187:23: error: assignment to ‘struct nodo *’ from ‘int’ makes pointer from integer without a cast [-Werror=int-conversion]
+  187 |     actual->siguiente = temp->numero;
+      |                       ^
+exercises.c:185:9: error: array subscript ‘Nodo {aka struct nodo}[0]’ is partly outside array bounds of ‘unsigned char[4]’ [-Werror=array-bounds]
+  185 |     temp->numero = arr[i];
+      |         ^~
+exercises.c:184:20: note: referencing an object of size 4 allocated by ‘malloc’
+  184 |     temp = (Nodo *)malloc(sizeof(int));
+      |                    ^~~~~~~~~~~~~~~~~~~
+exercises.c:186:27: error: array subscript ‘Nodo {aka struct nodo}[0]’ is partly outside array bounds of ‘unsigned char[4]’ [-Werror=array-bounds]
+  186 |     if (head == NULL) temp->numero = head->numero;
+      |                           ^~
+exercises.c:184:20: note: referencing an object of size 4 allocated by ‘malloc’
+  184 |     temp = (Nodo *)malloc(sizeof(int));
+      |                    ^~~~~~~~~~~~~~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+26c60f5
