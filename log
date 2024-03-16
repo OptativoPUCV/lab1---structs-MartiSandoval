@@ -313,3 +313,9 @@ exercises.c:116:7: error: variable ‘ascendente’ set but not used [-Werror=un
 cc1: all warnings being treated as errors
 Compilation failed
 5353dd6
+Sat 16 Mar 2024 07:11:58 PM UTC: 
+ exercises.c | 20 +++++++-------------
+ 1 file changed, 7 insertions(+), 13 deletions(-)
+ tests:  0|3
+total_score: 40/70
+607091f
